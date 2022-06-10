@@ -2,6 +2,12 @@
 
 A ToDo web app implemented using ReactJs together with TailwindCss. It explore the uses of React-Hooks. It uses a Json-Server package to create a json file locally in app and store data
 
+## Implementation
+<p>
+    <img src="screenshots/todoMobile.png" width="200px" height="auto" hspace="10"/>
+    <img src="screenshots/todoweb.png" width="200px" height="auto" hspace="10"/>
+</p>
+
 ## Available Scripts
 
 In the project directory, you can run:
