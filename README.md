@@ -4,8 +4,8 @@ A ToDo web app implemented using ReactJs together with TailwindCss. It explore t
 
 ## Implementation
 <p>
-    <img src="screenshot/todoMobile.png" width="200px" height="auto" hspace="10"/>
-    <img src="screenshot/todoweb.png" width="200px" height="auto" hspace="10"/>
+    <img src="screenshot/todoMobile.PNG" width="200px" height="auto" hspace="10"/>
+    <img src="screenshot/todoweb.PNG" width="200px" height="auto" hspace="10"/>
 </p>
 
 ## Available Scripts
