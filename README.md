@@ -1,3 +1,7 @@
+#ToDo Web App
+
+A ToDo web app implemented using ReactJs together with TailwindCss. It explore the uses of React Hooks. It uses a Json-Server package to create a json file locally in app and store data
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
