@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "text": "Learn Devops",
+      "day": "Everyday",
+      "reminder": true,
+      "id": 1
+    }
+  ]
+}
