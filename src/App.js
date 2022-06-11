@@ -6,6 +6,7 @@ import AddTask from "./components/AddTask";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import About from "./components/About";
+import Login from "./components/auth/Login";
 
 function App() {
   const url = "http://localhost:5000/tasks";
@@ -96,7 +97,7 @@ function App() {
               path="/"
               element={
                 <>
-                  {showAddTask && <AddTask addTask={addTask} />}
+                  {/* {showAddTask && <AddTask addTask={addTask} />}
                   {tasks.length > 0 ? (
                     <Tasks
                       tasks={tasks}
@@ -109,7 +110,8 @@ function App() {
                         No Task To Show
                       </h1>
                     </div>
-                  )}
+                  )} */}
+                  <Login/>
                 </>
               }
             />
