@@ -39,6 +39,7 @@ function AddTask({ addTask }) {
           onChange={(e) => setDay(e.target.value)}
         ></input>
       </div>
+
       <div className="flex flex-row items-center mb-2">
         <label className="font-bold text-2xl">Set Reminder</label>
         <input

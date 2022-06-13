@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import About from "./components/About";
 import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
+import Logout from "./components/auth/Logout";
 
 function App() {
   const url = "http://localhost:5000/tasks";
@@ -93,28 +95,24 @@ function App() {
           />
 
           <Routes>
+            <Route path="/" element={<Login />} />
             <Route
-              path="/"
+              path="/dashboard"
               element={
                 <>
-                  {/* {showAddTask && <AddTask addTask={addTask} />}
-                  {tasks.length > 0 ? (
-                    <Tasks
-                      tasks={tasks}
-                      onDelete={deleteTask}
-                      onToggle={toggleReminder}
-                    />
-                  ) : (
-                    <div className="bg-slate-400 flex justify-center h-20 w-auto mt-10">
-                      <h1 className="text-black font-bold self-center">
-                        No Task To Show
-                      </h1>
-                    </div>
-                  )} */}
-                  <Login/>
+                  {showAddTask && <AddTask addTask={addTask} />}
+
+                  <Tasks
+                    tasks={tasks}
+                    onDelete={deleteTask}
+                    onToggle={toggleReminder}
+                  />
+
+                  <Logout />
                 </>
               }
             />
+            <Route exact path="/register" element={<Register />} />
             <Route path="/about" element={<About />} />
           </Routes>
           <Footer />

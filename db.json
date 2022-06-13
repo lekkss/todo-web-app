@@ -1,14 +1,14 @@
 {
   "tasks": [
     {
-      "text": "Learn Devops",
+      "text": "Learn React",
       "day": "Everyday",
       "reminder": true,
       "id": 1
     },
     {
-      "text": "Play Soccer",
-      "day": "Saturday",
+      "text": "Go to Church",
+      "day": "Sunday",
       "reminder": false,
       "id": 2
     }

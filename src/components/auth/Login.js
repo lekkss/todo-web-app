@@ -15,10 +15,11 @@ function Login() {
 
   useEffect(() => {
     if (loading) {
-      <h1>loaing</h1>;
-      return;
+      return console.log("yo");
     }
-    if (user) navigate("/dashboard");
+    if (user) {
+      navigate("/dashboard");
+    }
   }, [user, loading]);
   return (
     <div>

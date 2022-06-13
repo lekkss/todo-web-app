@@ -8,12 +8,14 @@ const Header = ({ title, showAdd, showAddText }) => {
   return (
     <div className="container flex flex-row justify-between mx-auto mb-10">
       <h1 className="text-red-800 text-3xl">{title}</h1>
-      {location.pathname === "/" ? (
+      {location.pathname === "/dashboard" ? (
         <Button onClick={showAdd} value={showAddText ? "Close" : "Add"} />
       ) : (
-        <Link to="/" className="flex justify-center">
-          <IoIosArrowBack className="" /> <p className="-mt-1">Go To Task</p>
-        </Link>
+        location.pathname === "/about" && (
+          <Link to="/dashboard" className="flex justify-center">
+            <IoIosArrowBack className="" /> <p className="-mt-1">Go To Task</p>
+          </Link>
+        )
       )}
     </div>
   );
